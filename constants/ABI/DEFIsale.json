@@ -1,0 +1,230 @@
+[
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "serviceFee_",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "serviceFeeReceiver_",
+				"type": "address"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "previousOwner",
+				"type": "address"
+			},
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "newOwner",
+				"type": "address"
+			}
+		],
+		"name": "OwnershipTransferred",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "owner",
+				"type": "address"
+			},
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "token",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"internalType": "enum Defisale.TokenType",
+				"name": "tokenType",
+				"type": "uint8"
+			}
+		],
+		"name": "TokenCreated",
+		"type": "event"
+	},
+	{
+		"inputs": [],
+		"name": "_serviceFee",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "_serviceFeeReceiver",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "name_",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "symbol_",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "totalSupply_",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "charityAddress_",
+				"type": "address"
+			},
+			{
+				"internalType": "uint16",
+				"name": "taxFeeBps_",
+				"type": "uint16"
+			},
+			{
+				"internalType": "uint16",
+				"name": "liquidityFeeBps_",
+				"type": "uint16"
+			},
+			{
+				"internalType": "uint16",
+				"name": "charityFeeBps_",
+				"type": "uint16"
+			}
+		],
+		"name": "createLiquidityGeneratorToken",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "name_",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "symbol_",
+				"type": "string"
+			},
+			{
+				"internalType": "uint8",
+				"name": "decimals_",
+				"type": "uint8"
+			},
+			{
+				"internalType": "uint256",
+				"name": "totalSupply_",
+				"type": "uint256"
+			}
+		],
+		"name": "createStandardToken",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "owner",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "renounceOwnership",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "serviceFee_",
+				"type": "uint256"
+			}
+		],
+		"name": "setServiceFee",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "serviceFeeReceiver_",
+				"type": "address"
+			}
+		],
+		"name": "setServiceFeeReceiver",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "newOwner",
+				"type": "address"
+			}
+		],
+		"name": "transferOwnership",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	}
+]
