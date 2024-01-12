@@ -26,16 +26,16 @@ const formSchema = z.object({
     "BuyBackBabyToken",
   ]),
   name: z.string().min(2, {
-    message: "name must be at least 2 characters.",
+    message: "Name is required Field",
   }),
-  symbol: z.string().min(2, {
-    message: "symbol must be at least 2 characters.",
+  symbol: z.string().min(1, {
+    message: "Symbol is required Field",
   }),
-  decimal: z.string().min(2, {
-    message: "decimal must be at least 2 characters.",
+  decimal: z.string().min(1, {
+    message: "Decimal is required field",
   }),
-  totalsupply: z.string().min(2, {
-    message: "totalsupply must be at least 2 characters.",
+  totalsupply: z.string().min(1, {
+    message: "TotalSupply is required field",
   }),
 });
 

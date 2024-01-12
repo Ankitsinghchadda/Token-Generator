@@ -29,7 +29,7 @@ const formSchema = z.object({
   name: z.string().min(2, {
     message: "Token Name cannot be blank",
   }),
-  symbol: z.string().min(2, {
+  symbol: z.string().min(1, {
     message: "Token Symbol is a required field",
   }),
   totalsupply: z.string().min(2, {
